@@ -8,19 +8,30 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="Calculadora">
-    <h1>Calculadora</h1>
-    <label for="num1">Número 1:</label> <input id="num1" type="text"><br><br>
-    <label for="num2">Número 2:</label> <input id="num2" type="text"><br><br>
-
-    <button onclick="somar()">Somar</button>
-    <button onclick="subtrair()">Subtrair</button>
-    <button onclick="multiplicar()">Multiplicar</button>
-    <button onclick="dividir()">Dividir</button>
-
-    <br><br>
-
-    <label for="resultado">Resultado:</label> <input id="resultado" type="text" readonly><br><br>
+    <div id="buttons">
+        <input id="display" type="text" readonly>
+        <div id="lSide">
+            <button>9</button>
+            <button>8</button>
+            <button>7</button>
+            <button>6</button>
+            <button>5</button>
+            <button>4</button>
+            <button>3</button>
+            <button>2</button>
+            <button>1</button>
+            <button>,</button>
+            <button>0</button>
+            <button>=</button>
+        </div>
+        <div id="rSide">
+            <button>AC</button>
+            <button>/</button>
+            <button>*</button>
+            <button>-</button>
+            <button>+</button>
+        </div>
+    </div>
 
     </div>
 </body>
