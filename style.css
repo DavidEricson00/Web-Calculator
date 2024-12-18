@@ -31,7 +31,7 @@ button {
 
 #display {
     grid-column: 1 / -1;
-    height: 80px;
+    height: 150px;
     width: 350px;
     font-size: 60px;
     background-color: white;
