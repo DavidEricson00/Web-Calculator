@@ -7,3 +7,9 @@ function displayShow(digit) {
     }
 }
 
+function displayClear() {
+    console.log('Clear')
+    let display = document.getElementById('display');
+
+    display.value = '';
+}
