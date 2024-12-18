@@ -4,6 +4,8 @@ function displayShow(digit) {
 
     if (display.value.length <= 9){
         display.value += digit;
+    } else {
+        alert('Digit limit reached');
     }
 }
 
