@@ -1,38 +1,9 @@
-function somar() {
-    let valorNum1 = parseInt(document.getElementById('num1').value)
-    let valorNum2 = parseInt(document.getElementById('num2').value)
+function displayShow(digit) {
+    console.log(digit)
+    let display = document.getElementById('display');
 
-    let refResultado = document.getElementById('resultado')
-    refResultado.value = valorNum1 + valorNum2
-}
-
-function subtrair() {
-    let valorNum1 = parseInt(document.getElementById('num1').value)
-    let valorNum2 = parseInt(document.getElementById('num2').value)
-
-    let refResultado = document.getElementById('resultado')
-    refResultado.value = valorNum1 - valorNum2
-}
-
-
-function multiplicar() {
-    let valorNum1 = parseInt(document.getElementById('num1').value)
-    let valorNum2 = parseInt(document.getElementById('num2').value)
-
-    let refResultado = document.getElementById('resultado')
-    refResultado.value = valorNum1 * valorNum2
-}
-
-
-function dividir() {
-    let valorNum1 = parseInt(document.getElementById('num1').value);
-    let valorNum2 = parseInt(document.getElementById('num2').value);
-
-    let refResultado = document.getElementById('resultado');
-
-    if (valorNum2 == 0){
-        refResultado.value = "Divisão por 0"
-    } else{
-        refResultado.value = valorNum1 / valorNum2
+    if (display.value.length <= 9){
+        display.value += digit;
     }
 }
+
