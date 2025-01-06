@@ -13,3 +13,9 @@ This project is a simple web-based calculator created using HTML, CSS, and JavaS
 - Click the buttons to input numbers and operations.
 - Press "=" to calculate the result.
 - Press "AC" to clear the display.
+
+## 🌐 Access the Calculator
+
+You can try out the Web Calculator live by visiting the following link:
+
+[🧮 Web Calculator](https://davidericson00.github.io/Web-Calculator/)
