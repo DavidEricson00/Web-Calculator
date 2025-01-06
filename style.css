@@ -21,7 +21,7 @@ button {
     font-size: 3rem;
 }
 
-#buttons {
+#calculator {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto 1fr;
