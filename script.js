@@ -6,6 +6,10 @@ function displayShow(digit) {
 
     if (length >= 20) {
         return;
+    } 
+    
+    if (display.value === "Infinity" || display.value === "NaN") {
+        displayClear();
     }
 
     if (operators.includes(lastDigit) && operators.includes(digit)){
@@ -37,11 +41,7 @@ function adjustFontSize(display) {
 
     if (length > 9) {
         display.style.fontSize = `30px`;
-    }
-    else if (length > 21) {
-        display.style.fontSize = `20px`;
-    }
-    else{
+    } else{
         display.style.fontSize = `60px`;
     }
 }
