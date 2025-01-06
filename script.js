@@ -6,13 +6,13 @@ function displayShow(digit) {
 
     if (length >= 20) {
         return;
-    } 
+    }
     
     if (display.value === "Infinity" || display.value === "NaN") {
         displayClear();
     }
 
-    if (operators.includes(lastDigit) && operators.includes(digit)){
+    if ((operators.includes(lastDigit) && operators.includes(digit)) || (display.value === "" && operators.includes(digit))){
         return;
     }
     
