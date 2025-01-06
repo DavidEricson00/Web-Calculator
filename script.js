@@ -1,6 +1,13 @@
 function displayShow(digit) {
     console.log(digit)
+
     let display = document.getElementById('display');
+    let lastDigit = display.value.charAt(display.value.length - 1);
+    const operators = ["+","-","/","*"];
+
+    if (operators.includes(lastDigit) && operators.includes(digit)){
+        return;
+    }
 
     if (display.value.length <= 9){
         display.value += digit;
@@ -18,10 +25,4 @@ function displayClear() {
 
 function equals() {
     let display = document.getElementById('display');
-    try {
-        display.value = eval(display.value);
-    } catch (error) {
-        alert("Expression Error!");
-        display.value = '';
-    }
 }
