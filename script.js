@@ -18,5 +18,10 @@ function displayClear() {
 
 function equals() {
     let display = document.getElementById('display');
-    display.value = eval(display.value);
+    try {
+        display.value = eval(display.value);
+    } catch (error) {
+        alert("Expression Error!");
+        display.value = '';
+    }
 }
