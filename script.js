@@ -38,6 +38,7 @@ function equals() {
 
 function adjustFontSize(display) {
     let length = display.value.length;
+    display.style.transition = 'font-size 0.3s ease'; 
 
     if (length > 9) {
         display.style.fontSize = `30px`;

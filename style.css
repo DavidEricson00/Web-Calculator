@@ -54,10 +54,12 @@ button {
 
 #lSide button {
     background-color: #4f4f4f;
+    transition: background-color 0.1s ease;
 }
 
 #rSide button {
     background-color: #666666;
+    transition: background-color 0.1s ease;
 }
 
 #lSide button:active {
