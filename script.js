@@ -25,4 +25,5 @@ function displayClear() {
 
 function equals() {
     let display = document.getElementById('display');
+    display.value = math.evaluate(display.value);
 }
