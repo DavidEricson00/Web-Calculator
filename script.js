@@ -1,29 +1,46 @@
 function displayShow(digit) {
-    console.log(digit)
-
     let display = document.getElementById('display');
+    let length = display.value.length;
     let lastDigit = display.value.charAt(display.value.length - 1);
     const operators = ["+","-","/","*"];
+    
+    if (length >= 20) {
+        return;
+    }
 
     if (operators.includes(lastDigit) && operators.includes(digit)){
         return;
     }
+    
+    display.value += digit;
 
-    if (display.value.length <= 9){
-        display.value += digit;
-    } else {
-        alert('Digit limit reached');
-    }
+    adjustFontSize(display);
 }
 
 function displayClear() {
-    console.log('Clear')
     let display = document.getElementById('display');
-
     display.value = '';
+
+    adjustFontSize(display);
 }
 
 function equals() {
     let display = document.getElementById('display');
     display.value = math.evaluate(display.value);
+
+    adjustFontSize(display);
+}
+
+function adjustFontSize(display) {
+    let length = display.value.length;
+
+    if (length > 9) {
+        display.style.fontSize = `30px`;
+    }
+    else if (length > 21) {
+        display.style.fontSize = `20px`;
+    }
+    else{
+        display.style.fontSize = `60px`;
+    }
 }
