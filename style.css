@@ -58,3 +58,11 @@ button {
 #rSide button{
     background-color: #525252;
 }
+
+#lSide button:active{
+    background-color: #333333;
+}
+
+#rSide button:active{
+    background-color: #0056b3;
+}
